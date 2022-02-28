@@ -1,7 +1,7 @@
 import api from '../services/apiService';
 import { formatDate } from '../heplers/date';
 
-class Locations {
+export class Locations {
   constructor(api, helpers) {
     this.api = api;
     this.countries = null;
@@ -52,6 +52,7 @@ class Locations {
 
   serializeCountries(countries) {
   //  { 'Country code': {...} }
+    if(!Array.isArray(countries) || !countries.length) return {}
     return countries.reduce((acc, country) => {
       acc[country.code] = country;
       return acc

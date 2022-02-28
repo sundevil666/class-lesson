@@ -1,7 +1,7 @@
 import axios from 'axios';
 import config from '../config/appConfig';
 
-class Api {
+export class Api {
   constructor(config) {
     this.url = config.url
   }
