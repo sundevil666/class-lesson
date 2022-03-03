@@ -99,7 +99,7 @@
           </div>
           <ul id="nav-mobile" class="right hide-on-med-and-down ml-auto">
             <li>
-              <div class="input-field currency-select">
+              <div class="input-field currency-select" data-test-name="currency-select">
                 <select id="currency">
                   <option value="USD">$ US Dollar</option>
                   <option value="EUR">€ Euro</option>
@@ -115,7 +115,7 @@
         <div class="row d-flex">
           <div class="col m6 mx-auto">
             <div class="card">
-              <form name="locationControls">
+              <form name="locationControls" data-test-name="main-form">
                 <div class="card-content">
                   <span class="card-title">Card Title</span>
                   <div class="input-field">
@@ -123,6 +123,7 @@
                       type="text"
                       id="autocomplete-origin"
                       class="autocomplete"
+                      data-test-name="autocomplete-origin"
                     />
                     <label for="autocomplete-origin">Origin</label>
                   </div>
@@ -131,14 +132,16 @@
                       type="text"
                       id="autocomplete-destination"
                       class="autocomplete"
+                      data-test-name="autocomplete-destination"
                     />
                     <label for="autocomplete-destination">Destination</label>
                   </div>
-                  <div class="input-field">
+                  <div class="input-field" data-test-name="datepicker-depart-wrap">
                     <input
                       type="text"
                       class="datepicker"
                       id="datepicker-depart"
+                      data-test-name="datepicker-depart-input"
                     />
                     <label for="datepicker-depart">Depart date</label>
                   </div>
